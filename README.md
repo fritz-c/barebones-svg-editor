@@ -9,4 +9,4 @@ Preview changes to SVG code as you edit it.
 - Minimized code output (for transforming into base64, etc.)
 
 ### License
-MIT
+Apache v2.0
