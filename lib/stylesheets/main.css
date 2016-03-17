@@ -1,5 +1,10 @@
-.vector-display,
-.vector-zoomed-preview {
+.preview-container {
+    border: solid black 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+.vector-preview {
     position: relative;
     z-index: 5;
 }
@@ -8,13 +13,6 @@
     position: relative;
     height: 400px;
     width: 600px;
-}
-
-.display-container,
-.preview-container {
-    border: solid black 4px;
-    position: relative;
-    overflow: hidden;
 }
 
 .under-image {
