@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Barebones SVG Editor</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="lib/stylesheets/main.css">
+</head>
+<body>
+
+    <label>
+        Vector Width
+        <input id="vector-width" type="number" value="30"></input>
+    </label>
+    <label>
+        Vector Height
+        <input id="vector-height" type="number" value="30"></input>
+    </label>
+    <label>
+        Zoom Preview Scale
+        <input id="vector-zoomed-scale" type="number" value="4"></input>
+    </label>
+    <label>
+        Background Color
+        <select id="vector-background-color">
+            <option value="white" selected>white</option>
+            <option value="black">black</option>
+            <option value="yellow">yellow</option>
+            <option value="blue">blue</option>
+            <option value="red">red</option>
+            <option value="gray">gray</option>
+        </select>
+    </label>
+
+    <div class="display-container">
+        <img class="under-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+        <div class="vector-display"></div>
+    </div>
+
+    <div class="preview-container">
+        <img class="under-image under-image-zoomed" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+        <div class="vector-zoomed-preview"></div>
+    </div>
+
+    <label>
+        Underlay Image Select
+        <input type='file' id="custom-image-underlay-upload" />
+    </label>
+    <label>
+        Underlay Opacity
+        <input id="underlay-opacity" type="number" step="0.2" max="1" min="0" value="0.8"></input>
+    </label>
+
+    <div id="editor" class="editor"></div>
+
+    <label>
+        Spaceless SVG
+        <textarea id="code-output" class="code-output" cols="60" rows="6" onclick="this.select()"></textarea>
+    </label>
+
+    <label>
+        Spaceless SVG (Base64)
+        <textarea id="code-output-base64" class="code-output" cols="60" rows="6" onclick="this.select()"></textarea>
+    </label>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.3/ace.js"></script>
+    <script type="text/javascript" src="lib/scripts/main.js"></script>
+</body>
+</html>
