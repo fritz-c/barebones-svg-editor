@@ -2,8 +2,14 @@
   "name": "barebones-svg-editor",
   "version": "0.0.1",
   "description": "Preview changes to SVG code as you edit it",
-  "main": "index.js",
+  "main": "index.html",
+  "window": {
+    "toolbar": true,
+    "width": 1000,
+    "height": 800
+  },
   "scripts": {
+    "start": "node_modules/.bin/nw",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/fritz-c/barebones-svg-editor/issues"
   },
-  "homepage": "https://github.com/fritz-c/barebones-svg-editor#readme"
+  "homepage": "https://github.com/fritz-c/barebones-svg-editor#readme",
+  "dependencies": {
+    "nw": "^0.12.3"
+  }
 }
