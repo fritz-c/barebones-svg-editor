@@ -1,0 +1,24 @@
+{
+  "name": "barebones-svg-editor",
+  "version": "0.0.1",
+  "description": "Preview changes to SVG code as you edit it",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fritz-c/barebones-svg-editor.git"
+  },
+  "keywords": [
+    "SVG",
+    "Editor",
+    "Vector"
+  ],
+  "author": "Chris Fritz",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/fritz-c/barebones-svg-editor/issues"
+  },
+  "homepage": "https://github.com/fritz-c/barebones-svg-editor#readme"
+}
