@@ -70,7 +70,17 @@
 
     <script type="text/javascript" src="vendor/jquery.min.js"></script>
     <script type="text/javascript" src="vendor/ace/ace.js"></script>
-    <script src="node_modules/nw-dev/lib/dev.js"></script>
+    <script type="text/javascript" src="node_modules/nw-dev/lib/dev.js"></script>
+    <script type="text/javascript">
+        var gui = require('nw.gui');
+        if (process.platform === "darwin") {
+            var mb = new gui.Menu({type: 'menubar'});
+            mb.createMacBuiltin('RoboPaint', {
+                hideEdit: false,
+            });
+            gui.Window.get().menu = mb;
+        }
+    </script>
     <script type="text/javascript" src="lib/scripts/main.js"></script>
 </body>
 </html>
