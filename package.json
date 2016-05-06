@@ -4,7 +4,7 @@
   "description": "Preview changes to SVG code as you edit it",
   "main": "main.js",
   "scripts": {
-    "start": "electron main.js"
+    "start": "node_modules/.bin/electron main.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,8 @@
   "homepage": "https://github.com/fritz-c/barebones-svg-editor#readme",
   "devDependencies": {
     "electron-prebuilt": "^0.37.8"
+  },
+  "dependencies": {
+    "brace": "^0.8.0"
   }
 }
